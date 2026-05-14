@@ -1,0 +1,64 @@
+[
+    {
+        "name": "TechNova Solutions",
+        "address": "12 Marina Road, Lagos",
+        "phone": "+234 800 111 2222",
+        "website": "https://technova.com",
+        "image": "business1.webp",
+        "membership": 3
+    },
+
+    {
+        "name": "Prime Foods",
+        "address": "45 Allen Avenue, Ikeja",
+        "phone": "+234 800 333 4444",
+        "website": "https://primefoods.com",
+        "image": "business2.webp",
+        "membership": 2
+    },
+
+    {
+        "name": "Swift Logistics",
+        "address": "20 Lekki Phase 1",
+        "phone": "+234 800 555 6666",
+        "website": "https://swiftlogistics.com",
+        "image": "business3.webp",
+        "membership": 1
+    },
+
+    {
+        "name": "BlueWave Media",
+        "address": "Victoria Island, Lagos",
+        "phone": "+234 800 777 8888",
+        "website": "https://bluewave.com",
+        "image": "business4.webp",
+        "membership": 2
+    },
+
+    {
+        "name": "Elite Fashion",
+        "address": "Surulere, Lagos",
+        "phone": "+234 800 999 0000",
+        "website": "https://elitefashion.com",
+        "image": "business5.webp",
+        "membership": 1
+    },
+
+    {
+        "name": "GreenFarm Market",
+        "address": "Yaba, Lagos",
+        "phone": "+234 800 121 3434",
+        "website": "https://greenfarm.com",
+        "image": "business6.webp",
+        "membership": 3
+    },
+
+    {
+        "name": "Urban Builders",
+        "address": "Ajah, Lagos",
+        "phone": "+234 800 565 7878",
+        "website": "https://urbanbuilders.com",
+        "image": "business7.webp",
+        "membership": 2
+    }
+]

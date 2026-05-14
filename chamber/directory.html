@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lagos Chamber of Commerce Directory Page">
+    <meta name="author" content="Timilehin Olajide">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lagos Chamber Directory</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:description" content="Business directory for Lagos Chamber of Commerce">
+    <meta property="og:image" content="https://timmzzdev-pro.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://timmzzdev-pro.github.io/wdd231/chamber/directory.html">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-box">
+            <img src="images/logo.webp" alt="Chamber Logo">
+            <span>Lagos Chamber</span>
+        </div>
+
+        <button id="menu"></button>
+
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Business Directory</h1>
+
+        <div class="menu-buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+
+        <section id="members" class="grid"></section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-info">
+            <p>Lagos Chamber of Commerce</p>
+            <p>10 Broad Street, Lagos</p>
+            <p>info@lagoschamber.org</p>
+            <p>+234 800 123 4567</p>
+        </div>
+
+        <div>
+            <p>
+                &copy; <span id="currentyear"></span>
+                Timilehin Olajide | WDD 231 | Nigeria
+            </p>
+
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
