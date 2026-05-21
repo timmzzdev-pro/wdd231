@@ -1,5 +1,4 @@
-const apiKey = "YOUR_API_KEY";
-
+const apiKey = "abc123xyz";
 const url =
 `https://api.openweathermap.org/data/2.5/forecast?q=Lagos,NG&units=metric&appid=${apiKey}`;
 
