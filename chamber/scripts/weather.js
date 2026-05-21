@@ -14,46 +14,55 @@ document.querySelector("#forecast");
 
 async function getWeather() {
 
-```
-try {
+    try {
 
-    const response = await fetch(url);
+        const response = await fetch(url);
 
-    const data = await response.json();
+        if (!response.ok) {
+            throw new Error("Weather data could not be fetched");
+        }
 
-    console.log(data);
+        const data = await response.json();
 
-    temperature.textContent =
-    Math.round(data.list[0].main.temp);
+        console.log(data);
 
-    description.textContent =
-    data.list[0].weather[0].description;
+        // Current temperature
+        temperature.textContent =
+        Math.round(data.list[0].main.temp);
 
-    forecast.innerHTML = "";
+        // Weather description
+        description.textContent =
+        data.list[0].weather[0].description;
 
-    for (let i = 1; i <= 3; i++) {
+        // Clear previous forecast
+        forecast.innerHTML = "";
 
-        const day =
-        document.createElement("p");
+        // 3-day forecast
+        for (let i = 1; i <= 3; i++) {
 
-        const temp =
-        Math.round(data.list[i * 8].main.temp);
+            const forecastDay =
+            document.createElement("p");
 
-        day.textContent =
-        `Day ${i}: ${temp}°C`;
+            const temp =
+            Math.round(data.list[i * 8].main.temp);
 
-        forecast.appendChild(day);
+            forecastDay.textContent =
+            `Day ${i}: ${temp}°C`;
+
+            forecast.appendChild(forecastDay);
+        }
+
+    } catch (error) {
+
+        console.error(error);
+
+        temperature.textContent = "--";
+
+        description.textContent =
+        "Weather unavailable";
+
+        forecast.innerHTML = "";
     }
-
-} catch (error) {
-
-    console.log(error);
-
-    description.textContent =
-    "Weather unavailable";
-}
-```
-
 }
 
 getWeather();
