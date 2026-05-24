@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
-    ```
+    <!-- Meta Tags -->
     <meta name="description"
         content="Explore business opportunities, local events, weather updates, and trusted organizations through the Lagos Chamber of Commerce.">
 
@@ -16,17 +15,20 @@
     <title>Lagos Chamber Home</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <!-- Facebook Open Graph Meta Tags -->
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Lagos Chamber of Commerce Home">
 
     <meta property="og:description"
         content="Connect with local businesses, community events, and chamber opportunities in Lagos.">
 
-    <meta property="og:image" content="https://timmzzdev-pro.github.io/wdd231/chamber/images/hero.webp">
+    <!-- Make sure this image actually exists -->
+    <meta property="og:image" content="https://timmzzdev-pro.github.io/wdd231/chamber/images/hero-large.webp">
 
     <meta property="og:url" content="https://timmzzdev-pro.github.io/wdd231/chamber/index.html">
+
+    <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,7 +47,6 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
-    ```
 
 </head>
 
@@ -53,7 +54,6 @@
 
     <header>
 
-        ```
         <div class="logo-box">
             <img src="images/logo.webp" alt="Chamber Logo">
 
@@ -64,11 +64,11 @@
 
         <nav class="navigation">
             <a href="index.html" class="active">Home</a>
-        
+
             <a href="discover.html">Discover</a>
-        
+
             <a href="directory.html">Directory</a>
-        
+
             <a href="join.html">Join</a>
         </nav>
 
@@ -76,9 +76,7 @@
 
     <main>
 
-        ```
         <!-- HERO -->
-
         <section class="hero">
 
             <picture>
@@ -98,11 +96,9 @@
         </section>
 
         <!-- MAIN GRID -->
-
         <div class="home-grid">
 
             <!-- EVENTS -->
-
             <section class="events">
 
                 <h2>Current Events</h2>
@@ -115,7 +111,6 @@
             </section>
 
             <!-- WEATHER -->
-
             <section class="weather">
 
                 <h2>Weather</h2>
@@ -134,7 +129,6 @@
         </div>
 
         <!-- SPOTLIGHTS -->
-
         <section class="spotlights">
 
             <h2>Business Spotlights</h2>
@@ -142,30 +136,11 @@
             <div id="spotlight-container"></div>
 
         </section>
-        ```
-        <section class="weather">
-        
-            ```
-            <h2>Weather</h2>
-        
-            <p>
-                Current Temperature:
-                <span id="temperature"></span>°C
-            </p>
-        
-            <p id="description"></p>
-        
-            <div id="forecast"></div>
-            ```
-        
-        </section>
-
 
     </main>
 
     <footer>
 
-        ```
         <div class="footer-info">
             <p>Lagos Chamber of Commerce</p>
 
@@ -186,7 +161,6 @@
 
             <p id="lastModified"></p>
         </div>
-        ```
 
     </footer>
 
