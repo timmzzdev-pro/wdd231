@@ -3,38 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <meta name="description"
+        content="Discover Lagos attractions, culture, and business locations supported by the Lagos Chamber of Commerce.">
+
+    <meta name="author" content="Timilehin Olajide">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Discover Lagos Chamber of Commerce</title>
 
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalizes.css">
+    <link rel="stylesheet" href="styles/smalls.css">
+    <link rel="stylesheet" href="styles/largers.css">
     <link rel="stylesheet" href="styles/discover.css">
 
     <script type="module" src="scripts/discover.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <h1>Discover Lagos</h1>
-    </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="discover.html" class="active">Discover</a>
-        <a href="directory.html">Directory</a>
-        <a href="join.html">Join</a>
-    </nav>
+        <div class="logo-box">
+            <img src="images/logo.webp" alt="Chamber Logo">
+            <span>Lagos Chamber</span>
+        </div>
+
+        <button id="menu"></button>
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="discover.html" class="active">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+
+    </header>
 
     <main>
 
+        <h1>Discover Lagos</h1>
+
         <div id="visitMessage"></div>
 
-        <section id="cards"></section>
+        <section id="cards" class="discover-grid"></section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Lagos Chamber</p>
+        <p>&copy; 2026 Lagos Chamber of Commerce</p>
     </footer>
 
 </body>

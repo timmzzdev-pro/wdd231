@@ -1,41 +1,37 @@
 import { places } from "../data/places.mjs";
 
-const cardsContainer = document.querySelector("#cards");
-
-// -----------------------------
-// VISIT MESSAGE (localStorage)
-// -----------------------------
+const container = document.querySelector("#cards");
 const visitMessage = document.querySelector("#visitMessage");
 
+// --------------------
+// VISIT MESSAGE
+// --------------------
 const lastVisit = localStorage.getItem("lastVisit");
 const now = Date.now();
 
 if (!lastVisit) {
     visitMessage.textContent = "Welcome! Let us know if you have any questions.";
 } else {
-    const diffTime = now - Number(lastVisit);
-    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    const days = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
 
-    if (diffDays < 1) {
+    if (days < 1) {
         visitMessage.textContent = "Back so soon! Awesome!";
-    } else if (diffDays === 1) {
+    } else if (days === 1) {
         visitMessage.textContent = "You last visited 1 day ago.";
     } else {
-        visitMessage.textContent = `You last visited ${diffDays} days ago.`;
+        visitMessage.textContent = `You last visited ${days} days ago.`;
     }
 }
 
 localStorage.setItem("lastVisit", now);
 
-// -----------------------------
+// --------------------
 // BUILD CARDS
-// -----------------------------
+// --------------------
 places.forEach((place, index) => {
 
     const card = document.createElement("article");
     card.classList.add("card");
-
-    card.style.gridArea = `card${index + 1}`;
 
     card.innerHTML = `
         <h2>${place.name}</h2>
@@ -53,5 +49,5 @@ places.forEach((place, index) => {
         <button>Learn More</button>
     `;
 
-    cardsContainer.appendChild(card);
+    container.appendChild(card);
 });
