@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#visitMessage {
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+/* IMAGE EFFECT (desktop only) */
+.card img {
+    width: 100%;
+}
+
+@media (min-width: 641px) {
+    #cards {
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .card img:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+}
+
+@media (min-width: 1025px) {
+    #cards {
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+}
