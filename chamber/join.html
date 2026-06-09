@@ -1,77 +1,71 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
 
+    ```
     <meta name="description"
-        content="Explore the Lagos Chamber of Commerce business directory featuring trusted local companies, services, events, and networking opportunities in Lagos.">
+        content="Join the Lagos Chamber of Commerce and connect with local businesses, networking opportunities, events, and community growth initiatives.">
 
     <meta name="author" content="Timilehin Olajide">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title> join Lagos Chamber Join</title>
+    <title>Join Lagos Chamber of Commerce</title>
 
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico">
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Lagos Chamber of Commerce">
-
+    <meta property="og:title" content="Join Lagos Chamber of Commerce">
     <meta property="og:description"
-        content="Discover trusted businesses, local services, and networking opportunities through the Lagos Chamber of Commerce directory.">
-
+        content="Become a member of the Lagos Chamber of Commerce and enjoy networking, training, and business growth opportunities.">
     <meta property="og:image" content="https://timmzzdev-pro.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:url" content="https://timmzzdev-pro.github.io/wdd231/chamber/join.html">
 
-    <meta property="og:url" content="https://timmzzdev-pro.github.io/wdd231/chamber/directory.html">
-
-    <!-- Google Font -->
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- CSS -->
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/join.css">
 
-    <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    ```
+
 </head>
 
 <body>
 
+    ```
     <header>
-        <h1>Join - Lagos Chamber of Commerce</h1>
+        <div class="logo-box">
+            <img src="images/logo.webp" alt="Chamber Logo">
+            <span>Lagos Chamber</span>
+        </div>
     </header>
 
-    <div class="logo-box">
-        <img src="images/logo.webp" alt="Chamber Logo">
-        <span>Lagos Chamber</span>
-    </div>
-    
     <button id="menu"></button>
-    
+
     <nav class="navigation">
-        <a href="index.html" class="active">Home</a>
-    
+        <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
-    
         <a href="directory.html">Directory</a>
-    
-        <a href="join.html">Join</a>
+        <a href="join.html" class="active">Join</a>
+        <a href="#" class="open-modal" data-modal="npModal">Benefits</a>
+        
+        <button class="close-modal">Close</button>
     </nav>
 
     <main class="join-container">
 
-        ```
-        <h1>Join - Lagos Chamber of Commerce</h1>
+        <h1>Join Lagos Chamber of Commerce</h1>
 
         <section class="form-section">
 
@@ -121,8 +115,7 @@
 
                 <label>
                     Business Description
-                    <textarea name="description" title="Business Description">
-            </textarea>
+                    <textarea name="description" title="Business Description"></textarea>
                 </label>
 
                 <input type="hidden" id="timestamp" name="timestamp">
@@ -137,64 +130,56 @@
 
             <div class="card">
                 <h3>NP Membership</h3>
-                <a href="#" onclick="document.getElementById('npModal').showModal()">Benefits</a>
+                <a href="#" class="open-modal" data-modal="npModal">Benefits</a>
             </div>
 
             <div class="card">
                 <h3>Bronze Membership</h3>
-                <a href="#" onclick="document.getElementById('bronzeModal').showModal()">Benefits</a>
+                <a href="#" class="open-modal" data-modal="bronzeModal">Benefits</a>
             </div>
 
             <div class="card">
                 <h3>Silver Membership</h3>
-                <a href="#" onclick="document.getElementById('silverModal').showModal()">Benefits</a>
+                <a href="#" class="open-modal" data-modal="silverModal">Benefits</a>
             </div>
 
             <div class="card">
                 <h3>Gold Membership</h3>
-                <a href="#" onclick="document.getElementById('goldModal').showModal()">Benefits</a>
+                <a href="#" class="open-modal" data-modal="goldModal">Benefits</a>
             </div>
 
         </section>
-        ```
 
     </main>
-
-    <!-- NP Modal -->
 
     <dialog id="npModal">
         <h2>NP Membership</h2>
         <p>Free membership for nonprofit organizations.</p>
-        <button onclick="npModal.close()">Close</button>
+        <button class="close-modal">Close</button>
     </dialog>
-
-    <!-- Bronze Modal -->
 
     <dialog id="bronzeModal">
         <h2>Bronze Membership</h2>
         <p>Directory listing and networking opportunities.</p>
-        <button onclick="bronzeModal.close()">Close</button>
+        <button class="close-modal">Close</button>
     </dialog>
-
-    <!-- Silver Modal -->
 
     <dialog id="silverModal">
         <h2>Silver Membership</h2>
-        <p>Bronze benefits plus training events and discounts.</p>
-        <button onclick="silverModal.close()">Close</button>
+        <p>Bronze benefits plus training workshops, events, and discounts.</p>
+        <button class="close-modal">Close</button>
     </dialog>
-
-    <!-- Gold Modal -->
 
     <dialog id="goldModal">
         <h2>Gold Membership</h2>
-        <p>Premium advertising, featured spotlight, and all benefits.</p>
-        <button onclick="goldModal.close()">Close</button>
+        <p>Premium advertising, homepage spotlight, event discounts, and all chamber benefits.</p>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <footer>
-        <p>&copy; 2026 Chamber of Commerce</p>
+        <p>&copy; 2026 Lagos Chamber of Commerce</p>
     </footer>
+    ```
 
 </body>
 

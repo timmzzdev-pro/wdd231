@@ -1,19 +1,38 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+```
 const timestamp = document.querySelector("#timestamp");
 
 if (timestamp) {
-timestamp.value = new Date().toISOString();
+    timestamp.value = new Date().toISOString();
 }
-document.querySelectorAll(".open-modal").forEach(link => {
-    link.addEventListener("click", (event) => {
+
+const openButtons = document.querySelectorAll(".open-modal");
+
+openButtons.forEach(button => {
+    button.addEventListener("click", (event) => {
         event.preventDefault();
 
-        const modalId = link.dataset.modal;
-        document.getElementById(modalId).showModal();
+        const modalId = button.dataset.modal;
+        const modal = document.getElementById(modalId);
+
+        if (modal) {
+            modal.showModal();
+        }
     });
 });
 
-document.querySelectorAll(".close-modal").forEach(button => {
+const closeButtons = document.querySelectorAll(".close-modal");
+
+closeButtons.forEach(button => {
     button.addEventListener("click", () => {
-        button.closest("dialog").close();
+        const dialog = button.closest("dialog");
+
+        if (dialog) {
+            dialog.close();
+        }
     });
+});
+```
+
 });
