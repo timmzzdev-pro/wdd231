@@ -1,0 +1,122 @@
+[
+{
+"id":1,
+"name":"TmX Executive Loafer",
+"category":"Loafers",
+"price":120,
+"image":"images/products/loafer1.webp",
+"description":"Premium handcrafted leather loafer for business and formal occasions."
+},
+{
+"id":2,
+"name":"TmX Royal Loafer",
+"category":"Loafers",
+"price":135,
+"image":"images/products/loafer2.webp",
+"description":"Luxury slip-on loafer made with premium leather."
+},
+{
+"id":3,
+"name":"TmX Classic Loafer",
+"category":"Loafers",
+"price":110,
+"image":"images/products/loafer3.webp",
+"description":"Elegant everyday loafer designed for comfort and style."
+},
+{
+"id":4,
+"name":"TmX Urban Sneaker",
+"category":"Sneakers",
+"price":150,
+"image":"images/products/sneaker1.webp",
+"description":"Modern sneaker designed for active lifestyles."
+},
+{
+"id":5,
+"name":"TmX Street Runner",
+"category":"Sneakers",
+"price":165,
+"image":"images/products/sneaker2.webp",
+"description":"High-performance sneaker with superior cushioning."
+},
+{
+"id":6,
+"name":"TmX Elite Sneaker",
+"category":"Sneakers",
+"price":175,
+"image":"images/products/sneaker3.webp",
+"description":"Luxury sneaker crafted with premium materials."
+},
+{
+"id":7,
+"name":"TmX Summer Sandal",
+"category":"Sandals",
+"price":85,
+"image":"images/products/sandal1.webp",
+"description":"Lightweight sandal perfect for warm weather."
+},
+{
+"id":8,
+"name":"TmX Comfort Sandal",
+"category":"Sandals",
+"price":95,
+"image":"images/products/sandal2.webp",
+"description":"Comfort-focused sandal with durable sole."
+},
+{
+"id":9,
+"name":"TmX Premium Sandal",
+"category":"Sandals",
+"price":105,
+"image":"images/products/sandal3.webp",
+"description":"Luxury sandal combining comfort and style."
+},
+{
+"id":10,
+"name":"TmX Home Slipper",
+"category":"Slippers",
+"price":45,
+"image":"images/products/slipper1.webp",
+"description":"Soft indoor slipper for everyday relaxation."
+},
+{
+"id":11,
+"name":"TmX Cozy Slipper",
+"category":"Slippers",
+"price":50,
+"image":"images/products/slipper2.webp",
+"description":"Comfortable slipper with plush interior."
+},
+{
+"id":12,
+"name":"TmX Deluxe Slipper",
+"category":"Slippers",
+"price":60,
+"image":"images/products/slipper3.webp",
+"description":"Premium home slipper with luxury finish."
+},
+{
+"id":13,
+"name":"TmX Executive Oxford",
+"category":"Executive",
+"price":180,
+"image":"images/products/executive1.webp",
+"description":"Professional Oxford shoe for executives."
+},
+{
+"id":14,
+"name":"TmX Business Elite",
+"category":"Executive",
+"price":195,
+"image":"images/products/executive2.webp",
+"description":"Luxury business shoe crafted for success."
+},
+{
+"id":15,
+"name":"TmX Signature Executive",
+"category":"Executive",
+"price":220,
+"image":"images/products/executive3.webp",
+"description":"Flagship executive footwear from TmX."
+}
+]

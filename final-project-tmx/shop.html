@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TmX De' Luxury Shop | Premium Footwear Collection</title>
+
+    <meta name="description"
+        content="Browse luxury footwear from TmX De' Luxury. Shop loafers, sneakers, sandals and executive shoes.">
+
+    <meta name="author" content="Olajide Timilehin">
+
+    <meta property="og:title" content="TmX De' Luxury Shop">
+
+    <meta property="og:description" content="Explore our premium footwear collection.">
+
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo-container">
+
+                <img src="images/logo.png" alt="TmX Logo" class="logo">
+
+                <div class="brand">
+                    <h1>TmX</h1>
+                    <span>De' Luxury</span>
+                </div>
+
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navMenu">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="shop.html" class="active">
+                        Shop
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Shop Collection</h2>
+
+            <p style="text-align:center;">
+                Discover our premium footwear collection.
+            </p>
+
+        </section>
+
+        <section>
+
+            <div class="controls">
+
+                <input type="search" id="searchInput" placeholder="Search footwear...">
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="Loafers">
+                        Loafers
+                    </option>
+
+                    <option value="Sneakers">
+                        Sneakers
+                    </option>
+
+                    <option value="Sandals">
+                        Sandals
+                    </option>
+
+                    <option value="Slippers">
+                        Slippers
+                    </option>
+
+                    <option value="Executive">
+                        Executive
+                    </option>
+
+                </select>
+
+                <select id="currencySelector">
+
+                    <option value="USD">
+                        USD ($)
+                    </option>
+
+                    <option value="NGN">
+                        NGN (₦)
+                    </option>
+
+                    <option value="GBP">
+                        GBP (£)
+                    </option>
+
+                    <option value="EUR">
+                        EUR (€)
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div id="productsContainer" class="product-grid">
+
+                <!-- Products loaded here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PRODUCT MODAL -->
+
+    <div class="modal" id="productModal">
+
+        <div class="modal-content">
+
+            <button id="closeModal">
+                Close
+            </button>
+
+            <div id="modalBody">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>TmX De' Luxury</h3>
+
+                <p>
+                    Luxury in Every Step.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="attributions.html">
+                            Attributions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Project</h3>
+
+                <a href="#">
+                    Video Demonstration
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script type="module" src="js/shop.js">
+    </script>
+
+</body>
+
+</html>
